@@ -1,0 +1,117 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff7ec;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  color: #000000;
+  margin: 0; /* ← removes top and bottom spacing */
+  line-height: 0.8; /* optional: tighter spacing between lines */
+}
+
+.title2 {
+  color: #ff5722; /* different color if you want */
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #6a6a6a;
+}
+.button-group {
+  display: flex;
+  gap: 20px; /* space between buttons */
+}
+
+.button {
+  font-size: 1.2rem;
+  padding: 20px 40px; /* ← more height and width */
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(255, 87, 34, 0.6); /* stronger shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+.button:hover {
+  background-color: rgb(255, 64, 0);
+  transform: scale(1.05);
+  box-shadow: 0 0 8px 4px rgb(255, 87, 34, 0.6); /* orange glow */
+}
+/* Outline button style */
+.button.outline {
+  color: #ffffff; /* same orange color */
+  background-color: #69be44; /* fill on hover */
+
+  box-shadow: 0 6px 12px #69be44; /* stronger shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.button.outline:hover {
+  background-color: #5ce720; /* fill on hover */
+  color: white;
+  box-shadow: 0 0 8px 4px #5ce720a5; /* orange glow */
+  transform: scale(1.05);
+}
+
+.left-side {
+  max-width: 45%;
+  text-align: left;
+}
+
+.right-side {
+  max-width: 45%;
+}
+
+.image {
+  width: 85%;
+  height: auto;
+}
+
+.info-row {
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  align-items: flex-start; /* change this */
+  gap: 20%;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* change this */
+  min-width: 100px;
+}
+
+.info-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff5722;
+  margin-bottom: 4px;
+}
+
+.info-label {
+  font-size: 1rem;
+  color: #6b6b6b;
+}

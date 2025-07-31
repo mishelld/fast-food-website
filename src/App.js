@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import HeroSection from "./components/HeroSection";
+import WhyChoose from "./components/WhyChoose";
+import PopularItems from "./components/PopularItems";
+import HowItWorks from "./components/HowItWorks";
+import Footer from "./components/Footer";
+import MenuPage from "./components/MenuPage";
+import RestaurantAuthPage from "./components/RestaurantAuthPage";
+import NormalUserPage from "./components/NormalUserPage";
+import CartPage from "./components/CartPage";
+import Navbar from "./components/Navbar"; // 👈 import it
+
+function HomePage() {
+  return (
+    <>
+      <HeroSection />
+      <WhyChoose />
+      <PopularItems />
+      <HowItWorks />
+      <Footer />
+    </>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar /> {/* 👈 use it once, it appears on all pages */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/AuthPage" element={<RestaurantAuthPage />} />
+        <Route path="/cartPage" element={<CartPage />} />
+
+        <Route path="/user" element={<NormalUserPage />} />
+      </Routes>
+    </Router>
   );
 }
 

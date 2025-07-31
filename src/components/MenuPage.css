@@ -1,0 +1,208 @@
+/* General layout */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-page {
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+
+  min-height: 100vh;
+}
+
+/* Restaurant buttons */
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.restaurant-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.restaurant-button:hover,
+.restaurant-button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Menu cards */
+
+/* Toggle add button */
+.toggle-add-button {
+  margin: 1rem 0;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-add-button:hover {
+  background-color: #1976d2;
+  transform: scale(1.04);
+}
+
+/* Add item form */
+.add-item-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  max-width: 420px;
+  width: 100%;
+}
+
+.add-item-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Save button */
+.save-item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.save-item-button:hover {
+  background-color: #43a047;
+  transform: scale(1.03);
+}
+
+.plus-icon {
+  font-size: 20px;
+}
+
+/* Delete button */
+.delete-button {
+  background-color: transparent;
+  color: #e63946;
+  border: 2px solid #e63946;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: block;
+  margin: 12px auto 0;
+}
+
+.delete-button:hover {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.menu-card {
+  height: 300px; /* Small and consistent height */
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+}
+
+.menu-item-image {
+  width: 100%;
+  height: 150px; /* Keeps it compact */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.menu-card h3 {
+  font-size: 1rem;
+  margin: 8px 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #222;
+}
+
+.menu-card .price {
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.add-button {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}

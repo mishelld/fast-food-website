@@ -1,0 +1,160 @@
+.footer {
+  background-color: #171a28;
+  color: #eee;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1 1 220px; /* grow, shrink, base width */
+  min-width: 220px;
+}
+
+.footer-col h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #ffa322;
+}
+.footer-col h1 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-col p,
+.footer-col li,
+.footer-legal-links span {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-col li:hover {
+  color: #ff5722;
+}
+
+.app-store-btn,
+.google-play-btn {
+  display: block;
+  margin: 10px 0;
+  background-color: #ff5722;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.app-store-btn:hover,
+.google-play-btn:hover {
+  background-color: #e64a19;
+}
+
+.footer-legal-links {
+  margin-top: 15px;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.footer-legal-links span {
+  cursor: pointer;
+}
+
+.footer-legal-links span:hover {
+  text-decoration: underline;
+}
+
+.footer-separator {
+  border: none;
+  border-top: 1px solid #555;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.footer-bottom-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #aaa;
+  padding-bottom: 10px;
+}
+
+.footer-bottom-bar .legal-links span {
+  cursor: pointer;
+  margin: 0 5px;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-bar .legal-links span:hover {
+  color: #ff5722;
+}
+.footer-separator {
+  border: none;
+  border-top: 1px solid #555;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.footer-bottom-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #aaa;
+  padding-bottom: 10px;
+}
+
+.footer-bottom-bar .legal-links span {
+  cursor: pointer;
+  margin: 0 5px;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-bar .legal-links span:hover {
+  color: #ff5722;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #ffffff; /* your accent/orange color */
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e64a19; /* darker orange on hover */
+}
