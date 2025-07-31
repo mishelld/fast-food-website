@@ -2,6 +2,9 @@
 
 This is a demo website for a fast food delivery service built using modern web technologies.
 
+![Screenshot description](screenshot.png)
+
+
 ## Features
 
 - **User Types:**  
