@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./RestaurantAuthPage.css";
+import "./AuthPage.css";
 import { useNavigate } from "react-router-dom"; // React Router v6
 
-function RestaurantAuthPage() {
+function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
     name: "",
@@ -155,4 +155,4 @@ function RestaurantAuthPage() {
   );
 }
 
-export default RestaurantAuthPage;
+export default AuthPage;

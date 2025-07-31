@@ -96,8 +96,7 @@ function PopularItems() {
                 </>
               )}
               <p className="price">{item.price}</p>
-              <p className="restaurant">{item.restaurant}</p>
-              <div className="details"></div>
+              <p className="restaurant">{item.restaurantName}</p>
               <button
                 className="add-to-cart"
                 onClick={() => handleAddtoCart(item._id)}
