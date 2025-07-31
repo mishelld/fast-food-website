@@ -25,7 +25,3 @@ This is a demo website for a fast food delivery service built using modern web t
 
 - Customers can browse menus, select items, and place orders.  
 - Restaurant users can log in and update their menu items dynamically.
-
-
-npm install
-npm start
