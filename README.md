@@ -28,3 +28,10 @@ This is a demo website for a fast food delivery service built using modern web t
 
 - Customers can browse menus, select items, and place orders.  
 - Restaurant users can log in and update their menu items dynamically.
+
+## 📸 Image Credits
+
+- Image used in this project by [Muteeb Mehraj](https://www.figma.com/community/file/1082654572769267744) (via Figma), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Modified for this project.
+
+- Images marked as Free from Freepik are **Designed by Freepik** and sourced from [www.freepik.com](https://www.freepik.com).
+
